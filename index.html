@@ -1,0 +1,95 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ModelX</title>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,700;1,300&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div id="cursor-glow"></div>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-grid"></div>
+  <div class="hero-orb orb1"></div>
+  <div class="hero-orb orb2"></div>
+  <div class="hero-orb orb3"></div>
+
+  <div class="badge">AI Models Compendium v2026</div>
+
+  <h1>ModelX</h1>
+
+  <p>The definitive guide to every major AI model from large language models to robotics, computer vision to generative art.</p>
+
+  <div class="stats-row">
+    <div class="stat">
+      <div class="stat-num" id="count-models">50+</div>
+      <div class="stat-label">AI Models</div>
+    </div>
+    <div class="stat">
+      <div class="stat-num">12</div>
+      <div class="stat-label">Categories</div>
+    </div>
+    <div class="stat">
+      <div class="stat-num">200+</div>
+      <div class="stat-label">Use Cases</div>
+    </div>
+    <div class="stat">
+      <div class="stat-num">20+</div>
+      <div class="stat-label">Organisations</div>
+    </div>
+  </div>
+
+  <!-- <div class="scroll-hint">
+    <span>Explore</span>
+    <div class="scroll-line"></div>
+  </div> -->
+</section>
+
+<!-- FILTER -->
+<div class="filter-section">
+  <div class="filter-inner">
+    <span class="filter-label">Filter:</span>
+    <div class="filters" id="filters">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="llm">LLM</button>
+      <button class="filter-btn" data-filter="vision">Vision</button>
+      <button class="filter-btn" data-filter="audio">Audio</button>
+      <button class="filter-btn" data-filter="multimodal">Multimodal</button>
+      <button class="filter-btn" data-filter="image-gen">Image Gen</button>
+      <button class="filter-btn" data-filter="video-gen">Video Gen</button>
+      <button class="filter-btn" data-filter="code">Code AI</button>
+      <button class="filter-btn" data-filter="robotics">Robotics</button>
+      <button class="filter-btn" data-filter="science">Science</button>
+      <button class="filter-btn" data-filter="recommendation">Recommendation</button>
+      <button class="filter-btn" data-filter="search">Search</button>
+    </div>
+    <div class="search-box">
+      <input type="text" id="search-input" placeholder="Search models...">
+    </div>
+  </div>
+</div>
+
+<!-- MAIN -->
+<main class="main">
+  <div id="cards-container"></div>
+  <div class="no-results" id="no-results">No models found. Try a different search or filter.</div>
+</main>
+
+<!-- MODAL -->
+<div class="modal-overlay" id="modal-overlay">
+  <div class="modal" id="modal-content">
+    <div id="modal-body"></div>
+  </div>
+</div>
+
+<footer>
+  <p>ModelX - Built with curiosity. Data accurate as of February 2026. Designed & Curated by:Prateek Dutta</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
